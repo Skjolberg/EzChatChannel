@@ -27,7 +27,9 @@ public class FileModule implements SLLoader {
     @Override
     public void load() {
         loadConfig();
+        log.fine("Config loaded");
         loadMessages();
+        log.fine("Messages loaded");
     }
 
     @Override
