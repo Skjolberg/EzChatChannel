@@ -1,6 +1,6 @@
 # more info in console if needed
 debug: false
 # block distance for local channel
-local: 250
+local: 300
 
 

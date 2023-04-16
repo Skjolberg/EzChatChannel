@@ -1,5 +1,6 @@
 package me.davamu.listener;
 
+import lombok.extern.java.Log;
 import me.davamu.modules.FileModule;
 import me.davamu.util.PlayerUtil;
 import org.bukkit.Location;
@@ -9,6 +10,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import java.util.HashSet;
 import java.util.Set;
 
+@Log
 public class OldChatFormatHandler implements ChatFormatHandler<AsyncPlayerChatEvent> {
 
     private final FileModule fileModule;
@@ -21,10 +23,15 @@ public class OldChatFormatHandler implements ChatFormatHandler<AsyncPlayerChatEv
     public void accept(AsyncPlayerChatEvent event) {
 
         // global channel
-        if (!PlayerUtil.localChannel.contains(event.getPlayer())) return;
+        if (!PlayerUtil.localChannel.contains(event.getPlayer())) {
+            log.fine("The player is using the global channel");
+            return;
+        }
+        log.fine("The player is using the local channel");
 
         // distance
         final int distance = fileModule.getConfigSerializable().getLocal();
+        log.fine("Distance set in the configuration: " + distance);
 
         // location from message
         Location mainLoc = event.getPlayer().getLocation();
@@ -42,9 +49,11 @@ public class OldChatFormatHandler implements ChatFormatHandler<AsyncPlayerChatEv
 
         // delete viewers
         event.getRecipients().clear();
+        log.fine("Removing default recipients: " + event.getRecipients());
 
         // we add the viewers we want to send the message to
         event.getRecipients().addAll(players);
+        log.fine("Adding new recipients: " + event.getRecipients());
 
     }
 
