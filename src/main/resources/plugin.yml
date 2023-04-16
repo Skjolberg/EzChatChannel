@@ -1,0 +1,18 @@
+name: '${name}'
+main: '${group}.EzChatChannel'
+description: '${description}'
+version: '${version}'
+author: '${author}'
+api-version: '${minecraftVersion}'
+
+softdepend: [PlaceholderAPI, EzChat]
+
+permissions:
+  ezchatchannel.admin:
+    description: Allows all admin permissions
+    default: op
+    children:
+      - ezchatlocalglobal.use
+  ezchatchannel.use:
+    default: true
+    description: Allows you to use the command to drop items to the inventory

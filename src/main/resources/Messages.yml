@@ -1,0 +1,5 @@
+reload: "Plugin reloaded!"
+local: "You are now on the local channel!"
+local-channel: "Local"
+global: "You are now on the global channel!"
+global-channel: "Global"
