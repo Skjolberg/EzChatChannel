@@ -40,7 +40,9 @@ public class FileModule implements SLLoader {
     @Override
     public void reload() {
         loadConfig();
+        log.fine("Config loaded");
         loadMessages();
+        log.fine("Messages loaded");
     }
 
     private void loadConfig() {
