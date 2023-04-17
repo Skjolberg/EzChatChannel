@@ -44,7 +44,7 @@ public class NewChatFormatHandler implements ChatFormatHandler<AsyncChatEvent>{
         event.viewers().forEach(audience -> {
             if (audience instanceof Player player) {
                 Location receiverLoc = player.getLocation();
-                if (mainLoc.distance(receiverLoc) <= distance) {
+                if(receiverLoc.getWorld().equals(mainLoc.getWorld()) && mainLoc.distance(receiverLoc) <= distance) {
                     audiences.add(audience);
                 }
             } else if (audience instanceof ConsoleCommandSender) {

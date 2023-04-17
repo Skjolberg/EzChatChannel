@@ -42,7 +42,7 @@ public class OldChatFormatHandler implements ChatFormatHandler<AsyncPlayerChatEv
         // for each of them
         event.getRecipients().forEach(player -> {
             Location receiverLoc = player.getLocation();
-            if (mainLoc.distance(receiverLoc) <= distance) {
+            if (receiverLoc.getWorld().equals(mainLoc.getWorld()) && mainLoc.distance(receiverLoc) <= distance) {
                 players.add(player);
             }
         });
