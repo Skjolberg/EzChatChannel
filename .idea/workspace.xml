@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdbde835-6611-4182-b2dc-2fb3e41d0602" name="Changes" comment="bump to 1.0.1">
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/davamu/commands/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/davamu/commands/MainCommand.java" afterDir="false" />
+    <list default="true" id="fdbde835-6611-4182-b2dc-2fb3e41d0602" name="Changes" comment="color in messages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/davamu/modules/EventModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/davamu/modules/EventModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/davamu/placeholder/ChannelPlaceholderAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/davamu/placeholder/ChannelPlaceholderAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681771784819</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="color in messages">
+      <created>1681771893704</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681771893704</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +220,7 @@
     <MESSAGE value="viewers are only players and console from now on" />
     <MESSAGE value="verify that they are in the same world before checking the distance between players" />
     <MESSAGE value="bump to 1.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="bump to 1.0.1" />
+    <MESSAGE value="color in messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="color in messages" />
   </component>
 </project>

@@ -32,6 +32,8 @@ public class EventModule implements SLLoader {
         if(Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             ChannelPlaceholderAPI channelPlaceHolderAPI = new ChannelPlaceholderAPI(fileModule);
             channelPlaceHolderAPI.register();
+            channelPlaceHolderAPI.persist();
+
             log.info("PlaceholderAPI has been registered.");
         } else {
             log.warning("PlaceholderAPI was not found, you will not be able to display the placeholder indicating " +

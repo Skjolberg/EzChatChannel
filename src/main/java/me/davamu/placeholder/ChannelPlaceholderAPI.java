@@ -31,6 +31,11 @@ public class ChannelPlaceholderAPI extends PlaceholderExpansion {
     }
 
     @Override
+    public boolean persist() {
+        return true;
+    }
+
+    @Override
     public String onPlaceholderRequest(Player player, String str) {
         if (PlayerUtil.localChannel.contains(player)) return SLTextColor.color(fileModule.getMessagesSerializable().getLocalChannel());
         return SLTextColor.color(fileModule.getMessagesSerializable().getGlobalChannel());
