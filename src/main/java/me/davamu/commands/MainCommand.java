@@ -6,6 +6,7 @@ import me.davamu.util.PlayerUtil;
 import me.fixeddev.commandflow.annotated.CommandClass;
 import me.fixeddev.commandflow.annotated.annotation.Command;
 import me.fixeddev.commandflow.bukkit.annotation.Sender;
+import net.shibacraft.library.chat.SLTextColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -28,19 +29,19 @@ public class MainCommand implements CommandClass {
     @Command(names = "reload", permission = "ezchatchannel.admin")
     public void onReloadCommand(@Sender CommandSender sender) {
         mainModule.reload();
-        sender.sendMessage(fileModule.getMessagesSerializable().getReload());
+        sender.sendMessage(SLTextColor.color(fileModule.getMessagesSerializable().getReload()));
     }
 
     @Command(names = "local")
     public void onLocalCommand(@Sender Player sender) {
         PlayerUtil.localChannel.add(sender);
-        sender.sendMessage(fileModule.getMessagesSerializable().getLocal());
+        sender.sendMessage(SLTextColor.color(fileModule.getMessagesSerializable().getLocal()));
     }
 
     @Command(names = "global")
     public void onGlobalCommand(@Sender Player sender) {
         PlayerUtil.localChannel.remove(sender);
-        sender.sendMessage(fileModule.getMessagesSerializable().getGlobal());
+        sender.sendMessage(SLTextColor.color(fileModule.getMessagesSerializable().getGlobal()));
     }
 
 

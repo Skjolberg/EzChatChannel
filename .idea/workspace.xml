@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdbde835-6611-4182-b2dc-2fb3e41d0602" name="Changes" comment="verify that they are in the same world before checking the distance between players">
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+    <list default="true" id="fdbde835-6611-4182-b2dc-2fb3e41d0602" name="Changes" comment="bump to 1.0.1">
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/davamu/commands/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/davamu/commands/MainCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681771696096</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bump to 1.0.1">
+      <created>1681771784819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681771784819</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +210,7 @@
     <MESSAGE value="debug in FileModule.java" />
     <MESSAGE value="viewers are only players and console from now on" />
     <MESSAGE value="verify that they are in the same world before checking the distance between players" />
-    <option name="LAST_COMMIT_MESSAGE" value="verify that they are in the same world before checking the distance between players" />
+    <MESSAGE value="bump to 1.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="bump to 1.0.1" />
   </component>
 </project>
