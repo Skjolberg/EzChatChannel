@@ -65,7 +65,7 @@ public class EventModule implements SLLoader {
         }
 
         plugin.getServer().getPluginManager().registerEvent(eventClazz, new Listener() {
-        }, EventPriority.LOWEST, (listener, event) -> {
+        }, EventPriority.HIGH, (listener, event) -> {
             chatFormatHandler.accept((PlayerEvent) event);
         }, plugin, true);
     }

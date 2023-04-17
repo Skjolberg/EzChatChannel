@@ -6,6 +6,7 @@ import me.davamu.modules.FileModule;
 import me.davamu.util.PlayerUtil;
 import net.kyori.adventure.audience.Audience;
 import org.bukkit.Location;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.HashSet;
@@ -13,7 +14,7 @@ import java.util.Set;
 
 @Log
 public class NewChatFormatHandler implements ChatFormatHandler<AsyncChatEvent>{
-    
+
     private final FileModule fileModule;
 
     public NewChatFormatHandler(FileModule fileModule) {
@@ -46,10 +47,11 @@ public class NewChatFormatHandler implements ChatFormatHandler<AsyncChatEvent>{
                 if (mainLoc.distance(receiverLoc) <= distance) {
                     audiences.add(audience);
                 }
-            } else {
-                // console and other cases that should not be relevant
+            } else if (audience instanceof ConsoleCommandSender) {
                 audiences.add(audience);
             }
+            // What matters are the players and the console to register the chat.
+            // Worlds or other things I think are not needed.
         });
 
         // delete viewers
