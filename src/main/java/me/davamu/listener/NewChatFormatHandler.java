@@ -13,7 +13,7 @@ import java.util.Set;
 
 @Log
 public class NewChatFormatHandler implements ChatFormatHandler<AsyncChatEvent>{
-    @Deprecated
+    
     private final FileModule fileModule;
 
     public NewChatFormatHandler(FileModule fileModule) {
